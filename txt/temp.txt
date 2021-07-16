@@ -1,0 +1,1 @@
+ddd:GigabitEthernet1/0/6:senart-b-02-01

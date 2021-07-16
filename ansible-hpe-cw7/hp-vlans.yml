@@ -1,0 +1,11 @@
+---
+
+  - name: VLAN Automation with Ansible on HP Com7 Devices
+    hosts: "{{ host }}"
+    gather_facts: no
+    connection: local
+
+    tasks:
+
+      - name: ensure VLAN 10 exists
+        comware_switchport: link_type=access pvid={{ pvid }} name={{ interface }} username={{ username }} password={{ password }} hostname={{ inventory_hostname }}
